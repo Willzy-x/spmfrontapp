@@ -1,14 +1,14 @@
 <template>
     <div id="app">
-        <img src="../assets/logo.png" alt="Cannot load image"/>
-        <h1>软件项目管理学习网站</h1>
+        <img class="pictures" src="../assets/student.jpg" alt="Cannot load image"/>
+        <h1>学生登录</h1>
         <form>
             <div class="row">
                 <div class="col-6 col-md-4 m-auto">
                     <div class="form-group text-left">
                         <label for="username">学号</label>
                         <input type="text" class="form-control" id="username" v-model="user.username" placeholder="学号">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your sno with anyone else.</small>
+                        <small id="emailHelp" class="form-text text-muted">我们永远不会把您的信息泄露给任何人。</small>
                     </div>
                 </div>
             </div>
@@ -64,5 +64,10 @@
 
     button {
         margin-right: 10px;
+    }
+
+    .pictures {
+        margin-bottom: 20px;
+        border-radius: 5px;
     }
 </style>
