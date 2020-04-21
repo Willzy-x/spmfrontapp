@@ -46,7 +46,18 @@
             },
 
             login: function () {
-
+                this.axios.post('/api/student/login', {
+                    "sid": this.user.username,
+                    "sname": null,
+                    "gender": null,
+                    "grade": null,
+                    "hashedPassword": this.user.password
+                }).then(function (response) {
+                    console.log(response);
+                }).catch(function (error) {
+                    console.log("Here's the error message:");
+                    console.log(error);
+                });
             }
         }
     }

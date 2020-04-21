@@ -10,16 +10,7 @@ module.exports = {
         ]
     },
 
-    devServer: {
-        proxy: {
-            '/api': {
-                target: 'http://192.168.1.103:8081',
-                ws: true,
-                changeOrigin: true,
-                pathRewrtie: {
-                    '^/api': '/'
-                }
-            }
-        }
+    devServer : {
+        proxy: "http://localhost:8081" // 对应的是反向代理的地址
     }
 };
