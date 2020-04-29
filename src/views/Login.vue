@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="login">
         <img class="pictures" src="../assets/student.jpg" alt="Cannot load image"/>
         <h1>学生登录</h1>
         <form>
@@ -59,6 +59,11 @@
                     console.log(error);
                 });
             }
+        },
+        beforeCreate: function () {
+            let classAttributes = document.getElementById("studentInt");
+            let newClass = classAttributes.concat(" active");
+            document.getElementById("studentInt").setAttribute("class", newClass)
         }
     }
 </script>

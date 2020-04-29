@@ -8,14 +8,20 @@ const routes = [
     //
     {
         path: '/',
-        name: 'Home',
-        component: () => import('../views/Home')
+        name: 'Introduction',
+        component: () => import('../views/Introduction')
     },
 
     {
         path: '/student/login',
         name: 'StudentLogin',
         component: () => import('../views/Login')
+    },
+
+    {
+        path: '/student/home',
+        name: 'StudentHome',
+        component: () => import('../views/StudentInterface')
     }
 ];
 
